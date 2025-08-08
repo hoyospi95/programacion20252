@@ -9,6 +9,9 @@ public class SimpleList<T> {
 			head = new Node<T>(value);
 		}else{
 			Node<T> actual = head;
+			while(actual.getNext() != null){
+				actual = actual.getNext();
+			}
 		}
 		return added;
 	}
