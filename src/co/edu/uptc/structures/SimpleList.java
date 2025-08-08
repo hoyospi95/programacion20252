@@ -5,7 +5,11 @@ public class SimpleList<T> {
 	
 	public boolean add(T value) {
 		boolean added = false;
-		
+		if(head == null){
+			head = new Node<T>(value);
+		}else{
+			Node<T> actual = head;
+		}
 		return added;
 	}
 	
