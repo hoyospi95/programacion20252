@@ -14,6 +14,7 @@ public class SimpleList<T> {
 				actual = actual.getNext();
 			}
 			actual.setNext(new Node<T>(value));
+			added = true;
 		}
 		return added;
 	}
