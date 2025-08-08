@@ -7,6 +7,7 @@ public class SimpleList<T> {
 		boolean added = false;
 		if(head == null){
 			head = new Node<T>(value);
+			added = true;
 		}else{
 			Node<T> actual = head;
 			while(actual.getNext() != null){
