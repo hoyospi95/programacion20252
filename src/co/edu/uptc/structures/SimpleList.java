@@ -12,6 +12,7 @@ public class SimpleList<T> {
 			while(actual.getNext() != null){
 				actual = actual.getNext();
 			}
+			actual.setNext(new Node<T>(value));
 		}
 		return added;
 	}
